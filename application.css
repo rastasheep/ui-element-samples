@@ -1,0 +1,32 @@
+/* Highlight classes */
+.angular-highlight-current {
+  background-color: yellow;
+  font-weight: bold;
+}
+.angular-highlight {
+  background-color:	rgba(142,109,155,0.4);
+  font-weight: bold;
+}
+
+/* Layout stuff */
+body {
+  padding-top: 80px;
+}
+.navbar {
+  margin-bottom: 0;
+  padding: 20px 0;
+  background: #fff;
+}
+.angular-matches {
+  background-color: #fff;
+  border-left: none;
+}
+.angular-search-box{
+  border-right: none;
+  box-shadow: none;
+}
+.angular-search-box:focus {
+  border: solid 1px #ccc;
+  border-right: none;
+  box-shadow:none;
+}
