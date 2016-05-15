@@ -1,17 +1,26 @@
 'use strict';
 
-class Element {
+class DataStore {
 
-  constructor () {
-    this.addEventListeners();
+  constructor($http) {
+    this.http = $http;
+    this.title = '[Element name]';
+  }
+}
+
+class MainController {
+
+  static factory(dataStore) {
+    return new MainController(dataStore);
   }
 
-  addEventListeners () {
-  }
-
-  removeEventListeners () {
+  constructor(dataStore) {
+    this.title = dataStore.title;
   }
 
 }
 
-new Element();
+angular
+  .module('main', [])
+  .service('DataStore', ['$http', DataStore])
+  .controller('mainController', ['DataStore', MainController.factory]);

@@ -10,15 +10,15 @@
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="element.css">
 </head>
-<body>
+<body ng-app="main" ng-controller="mainController as mainCtrl">
   <header class="header">
-    <h1 class="header__title">[Element name]</h1>
+    <h1 class="header__title">{{::mainCtrl.title}}</h1>
   </header>
   <main class="main">
   </main>
 
 	<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" type="text/javascript"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" type="text/javascript"></script>
   <script src="element.js"></script>
 </body>
 </html>

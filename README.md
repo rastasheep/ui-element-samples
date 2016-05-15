@@ -8,9 +8,11 @@ A collection of UI element samples written mostly with Angular JS.
 2. Open an element's subfolder.
 3. Run index.html
 
-## ES2015 and ES5 Transpilation - [TODO]
+## ES2015 and ES5 Transpilation
 
-Please note: these samples are written in ES2015 and, as such, require [direct browser support](https://kangax.github.io/compat-table/es6/). You can transpile the examples with [BabelJS](https://babeljs.io/docs/usage/cli/):
+Please note: these samples are written in ES2015 and, as such,
+require [direct browser support](https://kangax.github.io/compat-table/es6/).
+You can transpile the examples with [BabelJS](https://babeljs.io/docs/usage/cli/):
 
 ```bash
 babel --presets=es2015 find-in-page/application.js --out-file find-in-page/application-es5.js
