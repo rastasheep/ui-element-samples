@@ -11,37 +11,45 @@
 
   <link rel="stylesheet" href="./application.css">
 </head>
-<body ng-app="main" ng-controller="mainCtrl">
+<body ng-app="main" ng-controller="mainController as mainCtrl">
   <header class="header header_fixed">
     <div class="container">
       <div class="input-group">
-        <input type="text" class="form-control header__search" ng-model="keyword" ng-trim="false" placeholder="Search" ng-enter="nextMatch()" ng-shift-enter="previousMatch()" aria-describedby="search" autofocus="true">
+        <input type="text"
+          class="form-control header__search"
+          ng-model="mainCtrl.keyword"
+          ng-trim="false"
+          placeholder="Search"
+          on-return="mainCtrl.nextMatch()"
+          on-shift-return="mainCtrl.previousMatch()"
+          aria-describedby="search"
+          autofocus="true">
         <div class="input-group-addon header__search-matches" id="search">
-          <span ng-show="keyword">{{matchIndex}} of {{numberOfMatches}}</span>
+          <span ng-show="mainCtrl.keyword">{{mainCtrl.matchIndex}} of {{mainCtrl.numberOfMatches}}</span>
         </div>
         <div class="input-group-btn">
           <button
             type="button"
             class="btn btn-default"
             aria-label="previous"
-            ng-disabled="!keyword"
-            ng-click="previousMatch()">⬆</button>
+            ng-disabled="!mainCtrl.keyword"
+            ng-click="mainCtrl.previousMatch()">⬆</button>
           <button
             type="button"
             class="btn btn-default"
             aria-label="next"
-            ng-disabled="!keyword"
-            ng-click="nextMatch()">⬇</button>
+            ng-disabled="!mainCtrl.keyword"
+            ng-click="mainCtrl.nextMatch()">⬇</button>
         </div>
       </div>
     </div>
   </header>
 
   <main class="container main"
-    highlight="demoText"
-    keyword="keyword"
-    number-of-matches="numberOfMatches"
-    current-match-index="matchIndex">
+    highlight="mainCtrl.demoText"
+    keyword="mainCtrl.keyword"
+    number-of-matches="mainCtrl.numberOfMatches"
+    current-match-index="mainCtrl.matchIndex">
   </main>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
