@@ -1,32 +1,78 @@
-/* Highlight classes */
-.angular-highlight-current {
-  background-color: yellow;
-  font-weight: bold;
-}
-.angular-highlight {
-  background-color:	rgba(142,109,155,0.4);
-  font-weight: bold;
+* {
+  box-sizing: border-box;
 }
 
-/* Layout stuff */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #FAFAFA;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 body {
-  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
 }
-.navbar {
-  margin-bottom: 0;
-  padding: 20px 0;
-  background: #fff;
+
+.header {
+  width: 100%;
+  height: 56px;
+  color: #FFF;
+  background: #4CAF50;
+  font-size: 20px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),
+      0 2px 9px 1px rgba(0,0,0,.12),
+      0 4px 2px -2px rgba(0,0,0,.2);
+  padding: 16px 16px 0;
+  position: relative;
+  z-index: 1;
 }
-.angular-matches {
-  background-color: #fff;
-  border-left: none;
+
+.header_fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
 }
-.angular-search-box{
+
+.header__title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+.header__search {
   border-right: none;
   box-shadow: none;
 }
-.angular-search-box:focus {
+.header__search:focus {
   border: solid 1px #ccc;
   border-right: none;
   box-shadow:none;
+}
+
+.header__search-matches {
+  background-color: #fff;
+  border-left: none;
+}
+
+.main {
+  flex: 1;
+  /*overflow-x: hidden;*/
+  /*overflow-y: scroll;*/
+  padding: 80px 16px 16px 16px;
+  position: relative;
+  z-index: 0;
+}
+
+/* Highlights */
+.search-match {
+  background-color:	#B0BEC5;
+  font-weight: bold;
+}
+
+.search-match_current {
+  background-color: #FFEE58;
+  font-weight: bold;
 }

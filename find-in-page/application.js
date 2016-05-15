@@ -43,14 +43,14 @@ angular
 	var component = function(scope, element, attrs) {
 
 		if (!attrs.highlightClass) {
-			attrs.highlightClass = 'angular-highlight';
+			attrs.highlightClass = 'search-match';
 		}
 
 		var replacer = function(match, item) {
 			scope.numberOfMatches++;
 			currentMatch++
 			if (currentMatch-1 === scope.currentMatchIndex){
-				highlightClass = 'angular-highlight-current';
+				highlightClass = 'search-match_current';
 			}else{
 				highlightClass = attrs.highlightClass;
 			}
@@ -92,9 +92,9 @@ angular
 
 			element.html(html);
 
-			var selected = $(".angular-highlight-current")[0]
+			var selected = $(".search-match_current")[0]
 			if (!isScrolledIntoView(selected))
-			$('html,body').animate({scrollTop: $(".angular-highlight-current").offset().top - 100 }, "fast");
+			$('html,body').animate({scrollTop: $(".search-match_current").offset().top - 100 }, "fast");
 		});
 	}
 	return {
