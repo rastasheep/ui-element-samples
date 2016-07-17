@@ -1,6 +1,6 @@
-# UI Elements
+# rastasheep's user interface lab
 
-A collection of UI element samples written mostly with Angular JS.
+Place for forging UI element samples mostly with Angular JS.
 
 ## Getting started
 
