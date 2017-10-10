@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Aleksandar Diklic - @rastasheep" />
+
+  <title>Interactive World Map - Custom Elements v1</title>
+  <meta name="keywords" content="SVG,CSS animations,Custom elements">
+  <meta name="description" content="World map with interactive pins.">
+
+  <style>
+    body {
+      background-color: #292f33;
+    }
+
+    world-map{
+      display: block;
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <world-map class="map">
+    <world-map-location top="28%" left="47%" label="england"></world-map-location>
+    <world-map-location top="33%" left="48.5%" label="france"></world-map-location>
+  </world-map>
+
+  <script src="world-map.js"></script>
+</body>
+</html>
