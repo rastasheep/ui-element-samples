@@ -21,6 +21,12 @@ class ViewSource extends HTMLElement {
         text-transform: uppercase;
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+        animation: bounce 0.6s ease infinite alternate;
+
+      }
+      @keyframes bounce{
+        from {transform: translateY(0);}
+        to   {transform: translateY(-5px);}
       }
     </style>
 
