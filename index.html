@@ -50,6 +50,13 @@
       font-size: 1em;
     }
   </style>
+    <script>
+      if (!window.customElements) {
+        window.customElements = {}
+        window.customElements.forcePolyfill = true
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi-sd-ce.js"></script>
 </head>
 <body>
   <h1>UI Element Samples</h1>
@@ -80,5 +87,7 @@
 
   <a href="https://github.com/rastasheep/ui-element-samples">See the source code on GitHub</a></br>
   <a href="https://twitter.com/lesa_ns">Follow me on Twitter</a>
+  <view-source></view-source>
+  <script src="view-source.js"></script>
 </body>
 </html>

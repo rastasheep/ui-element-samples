@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="./application.css">
+  <script>
+    if (!window.customElements) {
+      window.customElements = {}
+      window.customElements.forcePolyfill = true
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi-sd-ce.js"></script>
 </head>
 <body ng-app="main" ng-controller="mainController as mainCtrl">
   <header class="header header_fixed">
@@ -52,8 +59,11 @@
     current-match-index="mainCtrl.matchIndex">
   </main>
 
+  <view-source></view-source>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="./application.js"></script>
+  <script src="../view-source.js"></script>
 </body>
 </html>

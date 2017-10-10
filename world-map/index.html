@@ -22,6 +22,13 @@
       margin: auto;
     }
   </style>
+  <script>
+    if (!window.customElements) {
+      window.customElements = {}
+      window.customElements.forcePolyfill = true
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi-sd-ce.js"></script>
 </head>
 
 <body>
@@ -30,6 +37,9 @@
     <world-map-location top="33%" left="48.5%" label="france"></world-map-location>
   </world-map>
 
+  <view-source></view-source>
+
   <script src="world-map.js"></script>
+  <script src="../view-source.js"></script>
 </body>
 </html>
