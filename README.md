@@ -1,6 +1,6 @@
 # rastasheep's user interface lab
 
-Place for forging UI element samples mostly with Angular JS.
+Place for forging UI element samples, as little experiments with different technologies and innovative use cases.
 
 ## Getting started
 
@@ -10,8 +10,8 @@ Place for forging UI element samples mostly with Angular JS.
 
 ## ES2015 and ES5 Transpilation
 
-Please note: these samples are written in ES2015 and, as such,
-require [direct browser support](https://kangax.github.io/compat-table/es6/).
+Please note: these samples are mostly written in ES2015 and edge techologies, as such,
+they require [direct browser support](https://kangax.github.io/compat-table/es6/).
 You can transpile the examples with [BabelJS](https://babeljs.io/docs/usage/cli/):
 
 ```bash

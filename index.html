@@ -1,60 +1,84 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Aleksandar Diklic - @rastasheep" />
 
-    <meta name="author" content="Aleksandar Diklić">
-    <meta name="description" content="Place for forging UI element samples mostly with Angular JS and other front-end tools by rastasheep.">
-    <meta name="twitter:site" content="@lesa_ns" />
-    <meta name="theme-color" content="#ffab40">
+  <title>UI element samples</title>
+  <meta name="keywords" content="SVG,CSS animations,Custom elements,Angular,UI,Design">
+  <meta name="description" content="A collection of prototyped UI elements">
 
-    <title>Rastasheep - UI Lab</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      color: #404040;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      line-height: 1.5;
+    }
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    body {
+      padding: 1em 1em 4em;
+    }
 
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.grey-orange.min.css">
-    <link href="https://polygit.org/rastasheep.github.io+rastasheep+*/components/rastasheep.github.io/components/components.html" rel="import">
+    a {
+      color: #3F51B5;
+      text-decoration: underline;
+      -webkit-text-decoration-skip: ink;
+      text-decoration-skip: ink;
+    }
 
-    <!-- <link href="./components/dev-post-author-rastasheep.html" rel="import"> -->
+    a:visited {
+      color: #1A237E !important;
+    }
 
-    <style>
-      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-    </style>
-  </head>
+    li {
+      margin-bottom: 1em;
+    }
 
-  <body>
-    <post-layout>
-      <post-header title="User Interface Lab" hero-class="header_lab">
-      </post-header>
+    ul ul {
+      padding-left: 1.5em;
+    }
 
-      <post-author-rastasheep>
-      </post-author-rastasheep>
+    ul h1,
+    ul h2,
+    ul h3 {
+      font-weight: normal;
+      margin: 0;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>UI Element Samples</h1>
+  <p>
+    Welcome to the front-end development lab, place for forging UI element samples,<br>
+    as little experiments with different technologies and innovative use cases.<br>
+  </br>
+    Feel free to browse the collection:
+  </p>
+  <ul>
+    <li>
+      <h2>Elements</h2>
+      <ul>
+        <li>
+          <a href="./world-map/">Interactive world map</a> - Custom Elements v1</br>
+          World map with interactive pins for nicer representation of geographical data.
+        </li>
+        <li>
+          <a href="./find-in-page/">Find in page  (widely known as "cmd / ctrl + F")</a> - Angular.js</br>
+          Show all matching results in the page and sycle trough them with ease.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="./template/">Template</a>
+    </li>
+  </ul>
 
-      <post-content>
-        <p>
-          Welcome to the front-end development lab, place for forging UI element samples mostly with Angular JS.
-          Feel free to browse the collection:
-        </p>
-        <item-list items='[
-          {
-           "title": "Find in page",
-           "description": "\"Find in page\" or widely known as \"cmd / ctrl + F\" in Angular. Show all matching results in the page and sycle trough them with ease.",
-           "link": "./find-in-page",
-           "tag": "# ng 1.5",
-           "tagTitle": "Angular 1.5"
-         }
-        ]'>
-        </item-list>
-      </post-content>
-
-    </post-layout>
-
-    <view-source url="https://github.com/rastasheep/ui-lab">
-    <view-source>
-
-    <script src="https://code.getmdl.io/1.1.3/material.min.js" async="true"></script>
+  <a href="https://github.com/rastasheep/ui-element-samples">See the source code on GitHub</a></br>
+  <a href="https://twitter.com/lesa_ns">Follow me on Twitter</a>
 </body>
-
 </html>
